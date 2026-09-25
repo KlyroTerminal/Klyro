@@ -305,7 +305,7 @@ All protocol volume (Launchpad, Perps, Prediction Market, Privacy Mixer) incurs 
 
 ## 7. Formal Invariants & Security Architecture
 
-Klyro has been audited under institutional M&A technical due diligence standards ($200M valuation grade). Full audit documentation is available in [SECURITY_AUDIT.md](SECURITY_AUDIT.md).
+Klyro has been audited under institutional technical due diligence standards. Full audit documentation is available in [SECURITY_AUDIT.md](SECURITY_AUDIT.md).
 
 ### 7.1 Mathematical & Cryptographic Invariants
 1. **Groth16 Soundness & Non-Malleability**: 
@@ -373,7 +373,7 @@ Kylro/
 │
 ├── Anchor.toml                    # Solana program IDs and cluster configuration
 ├── Cargo.toml                     # Rust workspace configuration
-├── institutional_200m_valuation_audit.md # Formal Tier-1 Institutional Security Audit
+├── institutional_security_audit.md       # Formal Tier-1 Institutional Security Audit
 └── README.md                      # Comprehensive Protocol Specification
 ```
 
