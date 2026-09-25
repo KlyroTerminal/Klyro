@@ -48,7 +48,7 @@ Klyro separates concerns across four distinct operational layers to ensure deter
 |   └── Market Maker Dashboard (Real-time Cluster TPS, Slot Drift & Sub-Millisecond RPC Telemetry)        |
 +---------------------------------------------------------------------------------------------------------+
 |  [State & Execution Layer (TypeScript / JS In-Memory Engines)]                                          |
-|   ├── BinanceGradePerpEngine (In-memory PTR Gatekeeper / Anti-Wick Oracle / 5-Bar ADL / Jito MEV Tips)  |
+|   ├── KlyroPerpEngine (In-memory PTR Gatekeeper / Anti-Wick Oracle / 5-Bar ADL / Jito MEV Tips)         |
 |   ├── PriceSyncService (Binance WebSocket Ticker Feeds + Gold/Silver + Micro-Basis Smoothers)            |
 |   ├── KlyroPrivacyService (WebCrypto 31-byte field elements / Poseidon Leaf Hashers)                    |
 |   └── TokenLaunchService (Atomic Token-2022 deployer / Incinerator LP Burn / Streamflow Timelock)       |
@@ -366,7 +366,7 @@ Kylro/
 │   └── src/
 │       ├── components/            # LaunchLab, Perps, Predictions, PrivateSwap, MM Dashboard
 │       ├── context/               # SecureTransactionContext (useRef zero-thrash)
-│       └── services/              # KlyroMarketMakerEngine, BinanceGradePerpEngine, ZKService
+│       └── services/              # KlyroMarketMakerEngine, KlyroPerpEngine, ZKService
 │
 ├── circuits/                      # Circom Zero-Knowledge Circuits
 │   └── mixer.circom               # 20-level Poseidon Merkle tree Groth16 circuit
